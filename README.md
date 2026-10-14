@@ -26,3 +26,20 @@
 1. **Clone the repo:**
    ```bash
    git clone https://github.com/drdobks/LiveWall.git
+   
+2. Install requirements:
+   pip install -r requirements.txt
+   
+3. Add your wallpapers:
+Place your .mp4 files inside the wallpapers/videos/ folder.
+
+4. Run the app:
+python main.py
+
+## 📋 Roadmap
+ GIF Support
+ HTML/Web Wallpaper support
+ Automated Playlists
+ Standalone .exe version 
+
+ 
