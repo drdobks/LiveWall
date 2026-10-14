@@ -44,16 +44,12 @@
    ```bash
    pip install -r requirements.txt
 
-3. **🗺️ Roadmap**
-    
+## 🗺️ Roadmap
 
- Phase 1 (MVP): WorkerW injection, MPV hardware decoding, game detection, AFK shortcut.
- 
- Phase 2: GIF support, automated video playlists, Web/HTML wallpaper support.
- 
- Phase 3: Custom Shaders (ModernGL), audio-reactive wallpapers, mouse parallax.
- 
- Phase 4: Standalone .exe compilation (Nuitka) & Windows auto-start integration.
+- [x] **Phase 1 (MVP):** WorkerW injection, MPV hardware decoding, game detection, AFK shortcut.
+- [x] **Phase 2:** GIF support, automated video playlists, Web/HTML wallpaper support.
+- [x] **Phase 3:** Custom Shaders (ModernGL), audio-reactive wallpapers, mouse parallax.
+- [x] **Phase 4:** Standalone `.exe` compilation (Nuitka) & Windows auto-start integration.
 
 
  👤 Author
