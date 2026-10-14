@@ -50,6 +50,7 @@ Place your video files (```.mp4```) inside the ```wallpapers/videos/``` director
 4. **Run LiveWall:**
 ```bash
 python main.py
+```
 
 ## 🗺️ Roadmap
 
