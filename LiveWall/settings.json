@@ -1,0 +1,28 @@
+{
+    "wallpaper": "wallpapers\\videos\\Persona3reload.mp4",
+    "playlist": [],
+    "playlist_interval": 600,
+    "afk": {
+        "enabled": true,
+        "hotkey": "ctrl+shift+a",
+        "idle_seconds": 300,
+        "wallpaper": "",
+        "show_clock": true,
+        "clock_format": "%H:%M"
+    },
+    "performance": {
+        "max_fps": 60,
+        "pause_fullscreen": true,
+        "pause_games": true,
+        "game_blacklist": [
+            "steam.exe",
+            "valorant.exe",
+            "minecraft.exe"
+        ],
+        "startup_delay": 5
+    },
+    "display": {
+        "multi_monitor": "mirror"
+    },
+    "silent_mode": false
+}

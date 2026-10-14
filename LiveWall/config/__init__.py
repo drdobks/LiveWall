@@ -1,0 +1,1 @@
+"""LiveWall configuration module."""
