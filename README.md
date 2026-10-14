@@ -44,6 +44,13 @@
    ```bash
    pip install -r requirements.txt
 
+3. **Add your wallpapers:**
+Place your video files (```.mp4```) inside the ```wallpapers/videos/``` directory.
+
+4. **Run LiveWall:**
+```bash
+python main.py
+
 ## 🗺️ Roadmap
 
 - [x] **Phase 1 (MVP):** WorkerW injection, MPV hardware decoding, game detection, AFK shortcut.
