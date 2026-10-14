@@ -1,45 +1,58 @@
-# 🖥️ LiveWall 
+# 🖥️ LiveWall — Lightweight Windows Live Wallpaper Engine
 
-**LiveWall** is an ultra-lightweight, high-performance alternative to Wallpaper Engine, built entirely in Python. It allows you to use high-quality videos as live wallpapers on Windows without killing your RAM or CPU.
+**LiveWall** is an ultra-lightweight, high-performance alternative to Wallpaper Engine, built entirely in Python 3.11+. It renders high-quality animated wallpapers (videos) directly onto the Windows desktop background with minimal CPU and RAM usage.
 
-[![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
-[![Platform](https://img.shields.io/badge/platform-Windows-lightgrey.svg)](https://www.microsoft.com/windows)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-blue.svg)](https://www.python.org/)
+[![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey.svg)](https://www.microsoft.com/windows)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## ✨ Features
+---
 
-- **🚀 High Performance:** Uses hardware-accelerated video decoding (NVIDIA/AMD/Intel) via MPV.
-- **📦 Ultra Lightweight:** Minimalist resource usage, perfect for gaming setups.
-- **🖼️ Desktop Integration:** Injects video directly behind desktop icons (WorkerW method).
-- **⌨️ AFK Mode:** Press `Ctrl + Shift + A` to bring the wallpaper to the front for an aesthetic idle screen.
-- **🎮 Game Detection:** Automatically pauses video when full-screen games or heavy apps are running.
+## ✨ Key Features
+
+- 🚀 **Hardware Acceleration:** Uses MPV native hardware decoding (GPU accelerated, ultra-low CPU/RAM overhead).
+- 🖥️ **WorkerW Desktop Injection:** Seamlessly renders video behind desktop icons without blocking desktop interactions.
+- ⌨️ **AFK / Cinema Mode (`Ctrl + Shift + A`):** Instantly brings the wallpaper to the top layer when you step away.
+- 🎮 **Smart Game & App Monitor:** Automatically pauses video playback when games or heavy full-screen apps are active.
+- 📌 **System Tray Control:** Discreet system tray icon (`pystray`) for quick access, settings, and toggles.
+
+---
 
 ## 🛠️ Tech Stack
 
 - **Language:** Python 3.11+
-- **Video Core:** MPV (libmpv)
-- **API:** Win32 API (pywin32) for desktop injection.
-- **UI/System Tray:** Pystray & Pillow.
+- **Video Renderer:** `python-mpv` (`libmpv`)
+- **Windows Integration:** `pywin32` / `comtypes`
+- **UI & Tray Icon:** `pystray` & `Pillow`
+- **System Monitoring:** `psutil`
 
-## 🚀 How to Run
+---
 
-1. **Clone the repo:**
+## 📥 Getting Started
+
+### Prerequisites
+- Windows 10/11
+- Python 3.11 or higher installed
+
+### Installation & Run
+
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/drdobks/LiveWall.git
-   
-2. Install requirements:
+
+2. **Instal dependencies:**
+   ```bash
    pip install -r requirements.txt
-   
-3. Add your wallpapers:
-Place your .mp4 files inside the wallpapers/videos/ folder.
 
-4. Run the app:
-python main.py
+3. **🗺️ Roadmap**
+ Phase 1 (MVP): WorkerW injection, MPV hardware decoding, game detection, AFK shortcut.
+ Phase 2: GIF support, automated video playlists, Web/HTML wallpaper support.
+ Phase 3: Custom Shaders (ModernGL), audio-reactive wallpapers, mouse parallax.
+ Phase 4: Standalone .exe compilation (Nuitka) & Windows auto-start integration.
 
-## 📋 Roadmap
- GIF Support
- HTML/Web Wallpaper support
- Automated Playlists
- Standalone .exe version 
 
- 
+ 👤 Author
+Created with ❤️ by Eduardo (drdobks)
+
+Instagram: @drdobks
+GitHub: @drdobks
